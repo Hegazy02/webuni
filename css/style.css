@@ -1,0 +1,528 @@
+:root {
+    --main-color: #d82a4e;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #878787;
+    --light-gray: #edf4f6;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --container-max-width: 1150px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+.home {
+    background-image: url(../images/bg.webp);
+    height: 948px;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .container {
+    padding-top: 60px;
+}
+
+
+.home ul {
+    display: inline;
+    position: relative;
+    top: -10px;
+    margin-left: 150px;
+}
+
+.home ul li {
+    display: inline;
+    margin-left: 50px;
+}
+
+.home ul li a {
+    color: white;
+    font-weight: 600;
+}
+
+.home ul li a:hover {
+    color: var(--main-color);
+}
+
+.logo {
+    display: inline;
+}
+
+.login-button {
+    color: white;
+    background-color: var(--main-color);
+    padding: 18px 77px;
+    font-weight: 600;
+    float: right;
+}
+
+.form-section {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.home h2 {
+    margin-top: 230px;
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.home p {
+    color: white;
+    line-height: 2.2;
+    width: 85%;
+    margin: 20px auto;
+    font-size: 14.1px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.home form {
+    margin-top: 105px;
+    margin-left: 20px;
+
+}
+
+.home form input {
+    height: 50px;
+}
+
+.home form input[type="text"],
+.home form input[type="email"] {
+    width: 348px;
+    padding: 18px 30px;
+    outline: none;
+    margin-right: 20px;
+    border: none;
+
+}
+
+.home form input[type="submit"] {
+    padding: 18px 60px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 600;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.section-header {
+    margin: 100px 0 50px 0;
+    text-align: center;
+}
+
+.section-header h2 {
+    color: var(--dark);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.section-header p {
+    color: var(--gray);
+    line-height: 2.2;
+    width: 85%;
+    margin: 30px auto 0 auto;
+    font-size: 15px;
+}
+
+.course-boxes .box {
+    width: calc((100% / 3) - 20px);
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.course-boxes .box:hover .text {
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+.course-boxes .box:hover .text h3,
+.course-boxes .box:hover .text .info,
+.course-boxes .box:hover .text .course-number {
+    color: white;
+}
+
+
+
+
+.course-boxes .box .course-image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+
+
+}
+
+.course-boxes .box img {
+    width: 100%;
+}
+
+.course-boxes .box .text {
+    padding: 30px;
+    background-color: var(--light-gray);
+}
+
+.course-boxes .box .text h3 {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.course-boxes .box .text .info {
+    color: var(--gray);
+    line-height: 2.2;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+}
+
+.course-boxes .box .text .course-number {
+    color: var(--main-color);
+    line-height: 2.2;
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.course-search {
+    margin-top: 80px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.course-search p {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.course-search form {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.course-search form input {
+    width: 300px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: var(--light-gray);
+    float: left;
+    margin-right: 20px;
+
+}
+
+.course-search form a {
+    color: white;
+    padding: 20px 60px;
+    background-color: var(--main-color);
+    font-weight: 600;
+    float: left;
+
+}
+
+.featured-courses {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.featured-courses .container {
+    margin: 100px auto 50px;
+}
+
+.featured-courses>ul {
+    text-align: center;
+}
+
+.featured-courses>ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+.featured-courses>ul li a {
+    color: var(--dark);
+}
+
+.featured-courses-boxes .box {
+    width: calc((100% - 90px) / 4);
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background-color: var(--light-gray);
+    position: relative;
+}
+
+.featured-courses-boxes .box .course-image img {
+    width: 100%;
+}
+
+.featured-courses-boxes .text {
+    padding: 30px;
+    text-align: left;
+}
+
+.featured-courses-boxes .text h3 {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.featured-courses-boxes .text .info {
+    color: var(--gray);
+    line-height: 2.2;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+}
+
+.featured-courses-boxes .text .course-number {
+    color: var(--main-color);
+    line-height: 2.2;
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.featured-courses-boxes .box .author {
+    text-align: left;
+    padding: 10px 30px;
+}
+
+.featured-courses-boxes .box .author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+
+}
+
+.featured-courses-boxes .box .author p {
+    color: var(--gray);
+    line-height: 2.2;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    font-weight: 600;
+    float: left;
+
+}
+
+.featured-courses-boxes .box .author p span {
+    color: var(--main-color);
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.featured-courses-boxes .box .price {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.sign-up {
+    position: relative;
+    width: 100%;
+    background-color: red;
+    float: left;
+    margin-top: 80px;
+}
+
+.sign-up .text {
+    width: 50%;
+    float: left;
+    background-color: var(--main-color);
+    color: white;
+    padding: 120px 110px;
+    text-align: left;
+}
+
+.sign-up .image {
+    background-image: url("../images/signup-bg.webp");
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.sign-up .text h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.sign-up .text p {
+    margin: 20px 0 0 0;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.sign-up .text form {
+    margin: 60px 0 0 0;
+    background-color: white;
+    padding: 60px;
+}
+
+.sign-up .text form input {
+    display: block;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: var(--light-gray);
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.sign-up .text form button {
+    color: white;
+    background-color: var(--main-color);
+    padding: 18px 77px;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.join-section {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.join-section button {
+    color: white;
+    background-color: var(--main-color);
+    padding: 18px 77px;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer {
+    border-top: var(--main-color) 3px solid;
+    padding: 70px 15px;
+}
+
+.footer>div {
+    width: calc(100% / 5);
+    color: var(--gray);
+    float: left;
+
+}
+
+.footer>div>p.title {
+    color: var(--dark);
+    margin: 0 0 40px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer>div>ul>li {
+    font-size: 14px;
+
+}
+
+.contact-info>ul {
+    list-style-type: circle !important;
+}
+
+.contact-info li {
+    margin-bottom: 20px;
+}
+
+.footer .links li {
+    margin-bottom: 10px;
+
+}
+
+.footer .news-letter input {
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: var(--light-gray);
+    margin-bottom: 20px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.footer .news-letter button {
+    color: white;
+    background-color: var(--main-color);
+    padding: 18px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.we-dont-spam {
+    color: var(--gray);
+    margin: 20px 0 40px 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+}
