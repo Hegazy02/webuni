@@ -48,6 +48,10 @@ body {
     margin: 0 auto;
 }
 
+.active {
+    display: flex !important;
+}
+
 .home {
     background-image: url(../images/bg.webp);
     height: 948px;
@@ -62,6 +66,7 @@ body {
 .nav {
     display: flex;
 }
+
 
 .nav ul {
     flex-grow: 1;
@@ -83,12 +88,18 @@ body {
         margin: auto;
     }
 
-    .nav ul {
+    .nav div {
+        width: 100vw;
         display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav #links {
+        display: none;
         flex-direction: column;
         gap: 40px;
         align-items: center;
-
     }
 
     .nav ul li {
@@ -112,6 +123,10 @@ body {
         text-align: center;
     }
 
+    .menu-toggle {
+        display: block !important;
+    }
+
 
 }
 
@@ -127,10 +142,6 @@ body {
 
 .home ul li a:hover {
     color: var(--main-color);
-}
-
-.logo {
-    display: inline;
 }
 
 .login-button {
@@ -275,7 +286,6 @@ body {
     height: 150px;
     overflow: hidden;
 
-
 }
 
 .course-boxes .box img {
@@ -327,9 +337,10 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-    .course-search{
+    .course-search {
         padding: 50px 30px;
     }
+
     .course-search form {
         flex-direction: column;
 
@@ -363,6 +374,12 @@ body {
     background-color: var(--main-color);
     font-weight: 600;
 
+}
+
+.menu-toggle {
+    color: white;
+    font-size: 22px;
+    display: none;
 }
 
 .featured-courses {
@@ -605,12 +622,14 @@ body {
     gap: 30px;
     justify-content: space-evenly;
 }
+
 @media screen and (max-width: 600px) {
-    .footer{
+    .footer {
         flex-direction: column;
         justify-content: center;
     }
-    .footer div{
+
+    .footer div {
         display: flex;
         flex-direction: column;
         text-align: center;
