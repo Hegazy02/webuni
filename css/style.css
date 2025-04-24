@@ -27,6 +27,8 @@
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
     --container-max-width: 1150px;
+    scroll-behavior: smooth;
+
 }
 
 * {
@@ -357,7 +359,7 @@ body {
 
 .course-search form a {
     color: white;
-    padding: 20px 0;
+    padding: 20px 10px;
     background-color: var(--main-color);
     font-weight: 600;
 
