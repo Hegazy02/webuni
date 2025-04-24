@@ -247,14 +247,14 @@ body {
 
 @media screen and (max-width: 1000px) {
     .course-boxes .box {
-        width: calc((100% / 2) - 20px) !important;
+        width: 300px !important;
     }
 
 }
 
 @media screen and (max-width: 700px) {
     .course-boxes .box {
-        width: calc((100% / 1) - 20px) !important;
+        width: 400px !important;
     }
 }
 
@@ -290,6 +290,7 @@ body {
 
 .course-boxes .box img {
     width: 100%;
+    height: 100%;
 }
 
 .course-boxes .box .text {
@@ -442,6 +443,7 @@ body {
 
 .featured-courses-boxes .box .course-image img {
     width: 100%;
+    
 }
 
 .featured-courses-boxes .text {
